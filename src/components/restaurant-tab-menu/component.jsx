@@ -1,11 +1,9 @@
-import {RestaurantTabMenuItem} from "../restaurant-tab-menu-item/component.jsx";
-
-export const RestaurantTabMenu = ({ names }) => {
+export const RestaurantTabMenu = ({ restaurants, onSelectButton }) => {
     return <div>
         {
-            names.map((name) => (
+            restaurants.map(({name, id}) => (
                 <>
-                    <RestaurantTabMenuItem name={name} />
+                    <button onClick={() => onSelectButton(id)}>{name}</button>
                 </>
             )
         )}

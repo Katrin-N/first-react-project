@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import {Fragment} from "react";
 import {RestaurantMenu} from "../restaurant-menu/component.jsx";
 import {RestaurantReviews} from "../restaurant-reviews/component.jsx";
 

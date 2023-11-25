@@ -1,4 +1,5 @@
 import {Fragment} from "react";
+import {Counter} from "../counter/component.jsx";
 
 export const RestaurantMenu = ({menu}) => {
     return <Fragment>
@@ -7,7 +8,8 @@ export const RestaurantMenu = ({menu}) => {
             {menu.map((menuItem) => (
                 <>
                     <li>
-                        {menuItem.name} - {menuItem.price}
+                        <div>{menuItem.name} - {menuItem.price}</div>
+                        <Counter/>
                     </li>
                 </>))
             }

@@ -7,9 +7,9 @@ export const RestaurantMainContent = ({ restaurant }) => {
         return ;
     }
 
-    return <Fragment>
+    return <div>
         <h1>{restaurant.name}</h1>
         <RestaurantMenu menu={restaurant.menu}/>
         <RestaurantReviews reviews={restaurant.reviews}/>
-    </Fragment>;
+    </div>;
 };

@@ -3,12 +3,12 @@ import {RestaurantTabMenu} from "../../components/restaurant-tab-menu/component.
 import {RestaurantMainContent} from "../../components/restaurant-main-content/component.jsx";
 
 export const RestaurantsPage = ({restaurants}) => {
-    const [selectedRestaurantId, setSelectedRestaurant] = useState();
+    const [selectedRestaurantId, setSelectedRestaurantId] = useState();
 
-    const selectedRestaurant = restaurants.find(x => x.id === selectedRestaurantId);
+    const restaurant = restaurants.find(x => x.id === selectedRestaurantId);
 
     return <Fragment>
-        <RestaurantTabMenu restaurants = {restaurants} onSelectButton={setSelectedRestaurant}/>
-        <RestaurantMainContent restaurant = {selectedRestaurant}/>
+        <RestaurantTabMenu restaurants = {restaurants} onSelectButton={setSelectedRestaurantId}/>
+        <RestaurantMainContent restaurant = {restaurant}/>
     </Fragment>;
 };

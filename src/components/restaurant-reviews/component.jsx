@@ -1,4 +1,5 @@
 import {Fragment} from "react";
+import {ReviewForm} from "../review-form/component.jsx";
 
 export const RestaurantReviews = ({reviews}) => {
     return <Fragment>
@@ -9,6 +10,7 @@ export const RestaurantReviews = ({reviews}) => {
             ))
             }
         </ul>
+        <ReviewForm/>
     </Fragment>;
 };
 

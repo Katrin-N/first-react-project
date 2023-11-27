@@ -1,10 +1,9 @@
-import {Fragment, useState} from "react";
+import { Fragment } from "react";
 
-export const Counter = () => {
-    const [counter, setCounter] = useState(0);
+export const Counter = ({minValue, maxValue, step, value, onChangeCounter}) => {
     return <Fragment>
-        <button onClick={() => setCounter(counter < 1 ? 0 : counter - 1)}>-</button>
-        <div>{counter}</div>
-        <button onClick={() => setCounter(counter > 4 ? 5 : counter + 1)}>+</button>
+        <button onClick={() => onChangeCounter(value <= minValue ? minValue : value - step)}>-</button>
+        <div>{value}</div>
+        <button onClick={() => onChangeCounter(value >= maxValue ? maxValue : value + step)}>+</button>
     </Fragment>;
 };

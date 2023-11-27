@@ -5,11 +5,9 @@ export const RestaurantMenu = ({menu}) => {
         <h3>Меню</h3>
         <ul>
             {menu.map((menuItem) => (
-                <>
-                    <li>
-                        {menuItem.name} - {menuItem.price}
-                    </li>
-                </>))
+                <li>
+                    {menuItem.name} - {menuItem.price}
+                </li>))
             }
         </ul>
     </Fragment>;

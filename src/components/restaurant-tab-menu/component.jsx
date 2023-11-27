@@ -4,9 +4,7 @@ export const RestaurantTabMenu = ({ names }) => {
     return <div>
         {
             names.map((name) => (
-                <>
-                    <RestaurantTabMenuItem name={name} />
-                </>
+                <RestaurantTabMenuItem name={name} />
             )
         )}
     </div>;

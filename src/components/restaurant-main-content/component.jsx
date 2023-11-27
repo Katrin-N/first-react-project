@@ -4,9 +4,7 @@ export const RestaurantMainContent = ({ restaurants }) => {
     return <div>
         {
             restaurants.map((restaurant) => (
-                <>
-                    <RestaurantBlock restaurant={restaurant} />
-                </>
+                <RestaurantBlock restaurant={restaurant} />
             )
         )}
     </div>;

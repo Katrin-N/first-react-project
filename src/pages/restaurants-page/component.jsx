@@ -8,7 +8,7 @@ export const RestaurantsPage = ({restaurants}) => {
     const restaurant = restaurants.find(x => x.id === selectedRestaurantId);
 
     return <Fragment>
-        <RestaurantTabMenu restaurants = {restaurants} onSelectButton={setSelectedRestaurantId}/>
+        <RestaurantTabMenu restaurants = {restaurants} onSelectButton={setSelectedRestaurantId} />
         <RestaurantMainContent restaurant = {restaurant}/>
     </Fragment>;
 };

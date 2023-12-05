@@ -1,0 +1,28 @@
+.button {
+    width: 12px;
+    box-sizing: content-box;
+    margin: 6px;
+    padding: 6px;
+    border-radius: 4px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: grey;
+    transition: all .1s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(128, 128, 128, .8);
+    box-shadow: 0 0 10px #fff;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.value {
+    font-size: 16px;
+}

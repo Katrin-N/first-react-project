@@ -64,41 +64,41 @@
     display: flex;
 }
 
-.item-bb8afbec-2fec-491f-93e9-7f13950dd80b {
+.menu:nth-child(1) {
     background: #4e96b3;
 }
-.item-bb8afbec-2fec-491f-93e9-7f13950dd80b:hover {
+.menu:nth-child(1):hover {
     background: #3e86a3;
 }
-.item-bb8afbec-2fec-491f-93e9-7f13950dd80b:before {
+.menu:nth-child(1):before {
     border-top-color: #4e96b3;
 }
-.item-bb8afbec-2fec-491f-93e9-7f13950dd80b:hover:before {
+.menu:nth-child(1):hover:before {
     border-top-color: #3e86a3;
 }
 
-.item-982bfbce-c5e0-41a0-9f99-d5c20ecee49d {
+.menu:nth-child(2) {
     background: #c97676;
 }
-.item-982bfbce-c5e0-41a0-9f99-d5c20ecee49d:hover {
+.menu:nth-child(2):hover {
     background: #b96666;
 }
-.item-982bfbce-c5e0-41a0-9f99-d5c20ecee49d:before {
+.menu:nth-child(2):before {
     border-top-color: #c97676;
 }
-.item-982bfbce-c5e0-41a0-9f99-d5c20ecee49d:hover:before {
+.menu:nth-child(2):hover:before {
     border-top-color: #b96666;
 }
 
-.item-d9241927-09e1-44f3-8986-a76346869037 {
+.menu:nth-child(3) {
     background: #dbab58;
 }
-.item-d9241927-09e1-44f3-8986-a76346869037:hover {
+.menu:nth-child(3):hover {
     background: #cb9b48;
 }
-.item-d9241927-09e1-44f3-8986-a76346869037:before {
+.menu:nth-child(3):before {
     border-top-color: #dbab58;
 }
-.item-d9241927-09e1-44f3-8986-a76346869037:hover:before {
+.menu:nth-child(3):hover:before {
     border-top-color: #cb9b48;
 }

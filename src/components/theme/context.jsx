@@ -1,5 +1,3 @@
 import React from "react";
 
-export const ThemeContext = React.createContext({
-    forms: { theme: '' },
-});
+export const ThemeContext = React.createContext({});

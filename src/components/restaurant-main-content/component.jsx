@@ -9,7 +9,7 @@ export const RestaurantMainContent = ({ restaurant }) => {
 
     return <div className={styles.content}>
         <h1 className={styles.title}>{restaurant.name}</h1>
-        <RestaurantMenu menu={restaurant.menu}/>
-        <RestaurantReviews reviews={restaurant.reviews}/>
+        <RestaurantMenu restaurantId={restaurant.id} />
+        <RestaurantReviews restaurantId={restaurant.id}/>
     </div>;
 };

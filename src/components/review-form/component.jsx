@@ -28,7 +28,6 @@ import styles from "./styles.module.css";
 export const ReviewForm = () => {
     const [formValue, dispatch] = useReducer(reducer, DEFAULT_FORM_VALUE);
 
-    console.log(formValue);
     return <div className={styles.decor}>
         <div className={styles.formLeftDecoration}></div>
         <div className={styles.formRightDecoration}></div>

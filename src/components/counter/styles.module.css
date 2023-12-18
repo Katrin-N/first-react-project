@@ -13,6 +13,10 @@
     cursor: pointer;
 }
 
+.dark {
+    background: black;
+}
+
 button:hover {
     background-color: rgba(128, 128, 128, .8);
     box-shadow: 0 0 10px #fff;

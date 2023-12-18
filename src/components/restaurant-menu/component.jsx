@@ -1,15 +1,19 @@
-import {Fragment, useState} from "react";
-import {Counter} from "../counter/component.jsx";
+import {Fragment} from "react";
+import {useSelector} from "react-redux";
+import {selectDishIdsByRestaurantId} from "../../redux/features/entities/dish/selectors.js";
+import {Dish} from "../dish/component.jsx";
 
-export const RestaurantMenu = ({menu}) => {
-    const [amount, setAmount] = useState(0);
+export const RestaurantMenu = ({restaurantId}) => {
+    const dishIds = useSelector((state) =>
+        selectDishIdsByRestaurantId(state, restaurantId)
+    );
+
     return <Fragment>
         <h3>Меню</h3>
         <ul>
-            {menu.map((menuItem) => (
+            {dishIds.map((id) => (
                 <><li>
-                    <div>{menuItem.name} - {menuItem.price}</div>
-                    <Counter minValue={0} maxValue={5} step={1} value={amount} onChangeCounter={setAmount} />
+                    <Dish id={id}/>
                 </li></>))
             }
         </ul>

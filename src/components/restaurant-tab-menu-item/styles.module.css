@@ -1,0 +1,104 @@
+.menu {
+    display: block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s background-color;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    background: #9dc852;
+}
+
+.menu:before {
+    content: "";
+    display: block;
+    height: 0;
+    border-top: 5px solid #9dc852;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 0 solid #dddddd;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 101;
+    transition: 0.2s 0.2s border-top ease-out, 0.3s border-top-color;
+}
+
+.menu:hover {
+    background: #8db842;
+}
+.menu:hover:before {
+    border-top-color: #8db842;
+}
+
+.menu:hover:before {
+    border-top-width: 0;
+    transition: 0.2s border-top-width ease-in, 0.3s border-top-color;
+}
+
+.menu:after {
+    content: "";
+    display: block;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 0 solid #ebebeb;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 101;
+    transition: 0.2s border-bottom ease-in;
+}
+
+.menu:hover:after {
+    border-bottom-width: 5px;
+    transition: 0.2s 0.2s border-bottom-width ease-out;
+}
+
+.block {
+    display: flex;
+}
+
+.menu:nth-child(1) {
+    background: #4e96b3;
+}
+.menu:nth-child(1):hover {
+    background: #3e86a3;
+}
+.menu:nth-child(1):before {
+    border-top-color: #4e96b3;
+}
+.menu:nth-child(1):hover:before {
+    border-top-color: #3e86a3;
+}
+
+.menu:nth-child(2) {
+    background: #c97676;
+}
+.menu:nth-child(2):hover {
+    background: #b96666;
+}
+.menu:nth-child(2):before {
+    border-top-color: #c97676;
+}
+.menu:nth-child(2):hover:before {
+    border-top-color: #b96666;
+}
+
+.menu:nth-child(3) {
+    background: #dbab58;
+}
+.menu:nth-child(3):hover {
+    background: #cb9b48;
+}
+.menu:nth-child(3):before {
+    border-top-color: #dbab58;
+}
+.menu:nth-child(3):hover:before {
+    border-top-color: #cb9b48;
+}
